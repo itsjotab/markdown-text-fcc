@@ -1,16 +1,10 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { marked } from 'marked';
 
 
 function App() {
   const [text, setText] = useState('')
-
-  const Answer = () => {
-    const answer = marked.parse(text);
-    return answer
-
-  }
 
   const words = `# Hello, There
   ## Welcome to my Page
@@ -23,21 +17,22 @@ function App() {
   
   > This **word** is bold. This <em>word</em> is italic`
 
+
   return (
     <div className="App">
       <div>
         <h3 className='title'>Markdown</h3>
         <textarea
-          id='textarea'
+          id='editor'
           onChange={(e) => setText(e.target.value)}
-        >
+        >{words}
         </textarea>
       </div>
       <div>
-        <h3 className='bold'>Preview</h3>
+        <h3 id="preview" className='bold'>Preview</h3>
         <div
           className='preview'
-          dangerouslySetInnerHTML={{ __html: Answer() }}>
+          dangerouslySetInnerHTML={{ __html: marked.parse(text) }}>
         </div>
       </div>
     </div>
