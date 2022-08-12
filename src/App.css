@@ -18,6 +18,9 @@ body {
   height: 100%;
 }
 
+.title {
+  color: white;
+}
 
 textarea {
   font-size: 15px;
@@ -32,14 +35,14 @@ textarea {
 
 @media screen and (max-width: 600px) {
   textarea {
-    min-width: 400px;
+    min-width: 200px;
   }
 }
 
 .preview {
   background-color: #E0C9A6;
   min-width: 400px;
-  min-height: 350px;
+  min-height: 500px;
   max-width: 400px;
   max-height: 500px;
   border-radius: 3px;
