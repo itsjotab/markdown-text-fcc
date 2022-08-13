@@ -1,22 +1,27 @@
 import './App.css';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { marked } from 'marked';
 
 
 function App() {
   const [text, setText] = useState('')
 
-  const words = `# Hello, There
-  ## Welcome to my Page
+  // let words = `# Hello, There
+  // ## Welcome to my Page
   
-  There's also [links](https://www.freecodecamp.org) to joining Free Code Camp and learning
+  // There's also [links](https://www.freecodecamp.org) to joining Free Code Camp and learning
    
-  > These are a numbered list!
-  1. And this is insane
-  1. Its so fun!
+  // > These are a numbered list!
+  // 1. And this is insane
+  // 1. Its so fun!
   
-  > This **word** is bold. This <em>word</em> is italic`
+  // > This **word** is bold. This <em>word</em> is italic`
 
+  // const MarkDown = () => {
+  //   useEffect(() => {
+  //     return {__html: words }
+  //   }, [words])
+  // }
 
   return (
     <div className="App">
@@ -24,15 +29,14 @@ function App() {
         <h3 className='title'>Markdown</h3>
         <textarea
           id='editor'
-          onChange={(e) => setText(e.target.value)}
-        >{words}
-        </textarea>
+          onChange={(e) => setText(e.target.value)}>
+            {}
+</textarea>
       </div>
       <div>
-        <h3 id="preview" className='bold'>Preview</h3>
-        <div
-          className='preview'
-          dangerouslySetInnerHTML={{ __html: marked.parse(text) }}>
+        <h3 className='bold'>Preview</h3>
+        <div id="preview" 
+        className='preview'> {marked.parse(text)}
         </div>
       </div>
     </div>
