@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/markdown-text-fcc/static/css/main.6f510480.css",
-    "main.js": "/markdown-text-fcc/static/js/main.5e67d023.js",
+    "main.css": "/markdown-text-fcc/static/css/main.04cb972b.css",
+    "main.js": "/markdown-text-fcc/static/js/main.111a0bd7.js",
     "static/js/787.622f1c48.chunk.js": "/markdown-text-fcc/static/js/787.622f1c48.chunk.js",
+    "static/media/Telet.jpg": "/markdown-text-fcc/static/media/Telet.e2145c649905a3244719.jpg",
     "index.html": "/markdown-text-fcc/index.html",
-    "main.6f510480.css.map": "/markdown-text-fcc/static/css/main.6f510480.css.map",
-    "main.5e67d023.js.map": "/markdown-text-fcc/static/js/main.5e67d023.js.map",
+    "main.04cb972b.css.map": "/markdown-text-fcc/static/css/main.04cb972b.css.map",
+    "main.111a0bd7.js.map": "/markdown-text-fcc/static/js/main.111a0bd7.js.map",
     "787.622f1c48.chunk.js.map": "/markdown-text-fcc/static/js/787.622f1c48.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f510480.css",
-    "static/js/main.5e67d023.js"
+    "static/css/main.04cb972b.css",
+    "static/js/main.111a0bd7.js"
   ]
 }
